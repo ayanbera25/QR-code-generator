@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <title>QR-Code-Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="">
+
+    <div class="container" style="">
+        <div class="title-container">
+            <h2 class="title" style="font-family:cursive; color: violet;">QR-CODE GENERATOR</h2>
+        </div>
+        
+        <div class="form-container">
+            <form class="qr-form">
+                <input type="text" id="name" placeholder="Enter any text or url" width="100%"></input>
+                
+                <button type="button" id="form-btn">Generate</button>
+            </form>
+            <p id="error"></p>
+            
+        </div>
+
+        <div class="qr-conatainer">
+            <img src="qrcode.png" width="250px" height="250px" id="qrcode">
+
+        </div>
+        <div id="scan-text"></div>
+        <br>
+        <button id="download-btn"><a href="" download id="download-qr">download</a></button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
