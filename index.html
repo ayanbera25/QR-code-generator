@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,32 +9,46 @@
     <title>QR-Code-Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="">
 
-    <div class="container" style="">
-        <div class="title-container">
-            <h2 class="title" style="font-family:cursive; color: violet;">QR-CODE GENERATOR</h2>
+<body class="body">
+
+    <div class="big-container">
+
+        <div class="img-container">
+            <img src="./assets/images/image1.webp" width="100%" height="450px">
         </div>
-        
-        <div class="form-container">
-            <form class="qr-form">
-                <input type="text" id="name" placeholder="Enter any text or url" width="100%"></input>
-                
-                <button type="button" id="form-btn">Generate</button>
-            </form>
-            <p id="error"></p>
+
+        <div class="container">
+            <div class="title-container" >
+                <h2 class="title text-center" style="font-family:cursive; color:black;">QR-CODE GENERATOR</h2>
+            </div>
+
+            <div class="form-container">
+                <form class="qr-form">
+                    <input type="text" id="name" placeholder="Enter any text or url" style=" width:80%;height: 20px;"></input>
+                    <button type="reset" id="reset-btn"><b>X</b></button>
+                    <br>
+
+                    <button type="button" id="form-btn" ><b>Generate</b></button>
+                </form>
+                <p id="error" class="text-center"></p>
+
+            </div><br>
+
+            <div class="qr-container">
+                <img src="" width="250px" height="250px" id="qrcode">
+
+            </div>
+            <br>
+            <div id="scan-text" class="text-center"></div>
             
         </div>
 
-        <div class="qr-conatainer">
-            <img src="qrcode.png" width="250px" height="250px" id="qrcode">
+        
 
-        </div>
-        <div id="scan-text"></div>
-        <br>
-        <button id="download-btn"><a href="" download id="download-qr">download</a></button>
     </div>
 
     <script src="app.js"></script>
 </body>
+
 </html>
